@@ -1,0 +1,13 @@
+# robots.txt — ekspresy.org.pl
+# https://ekspresy.org.pl/robots.txt
+
+User-agent: *
+Allow: /
+
+# Zablokuj ewentualne pliki techniczne (dostosuj jeśli masz inne foldery)
+Disallow: /coffee/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Sitemap
+Sitemap: https://ekspresy.org.pl/sitemap.xml
