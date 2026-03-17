@@ -873,7 +873,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
   </ul>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 (function(){
 
   // sticky nav shadow
@@ -916,7 +916,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
     var st = document.createElement('style');
     st.textContent = '.rv{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}.rv.in{opacity:1;transform:none}';
     document.head.appendChild(st);
-    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header');
+    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header,.galeria-item');
     var obs = new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
     },{threshold:0.1});
