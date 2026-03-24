@@ -1,13 +1,12 @@
-# robots.txt — ekspresy.org.pl
-# https://ekspresy.org.pl/robots.txt
+# Rutkowski Ekspresy — ekspresy.org.pl
+# robots.txt
 
 User-agent: *
 Allow: /
 
-# Zablokuj ewentualne pliki techniczne (dostosuj jeśli masz inne foldery)
-Disallow: /coffee/
-Disallow: /admin/
-Disallow: /cgi-bin/
+# Pliki statyczne
+Allow: /img/
+Allow: /css/
+Allow: /js/
 
-# Sitemap
 Sitemap: https://ekspresy.org.pl/sitemap.xml

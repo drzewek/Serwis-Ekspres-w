@@ -49,7 +49,15 @@
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "16:00" }
       ],
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5" }
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 53.3827, "longitude": 14.5816 },
+      "founder": { "@type": "Person", "name": "Robert Rutkowski", "jobTitle": "Serwisant ekspresów ciśnieniowych" },
+      "priceRange": "$$",
+      "areaServed": [
+        { "@type": "City", "name": "Szczecin" },
+        { "@type": "Country", "name": "Polska", "description": "Obsługa wysyłkowa przez paczkomat InPost" }
+      ],
+      "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJ42E0GWanAEcRbY1d8r7eyKU"]
     },
     {
       "@type": "BreadcrumbList",
@@ -595,7 +603,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
 </footer>
 
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
 
   // sticky nav shadow
@@ -638,7 +646,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
     var st = document.createElement('style');
     st.textContent = '.rv{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}.rv.in{opacity:1;transform:none}';
     document.head.appendChild(st);
-    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header,.galeria-item');
+    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header');
     var obs = new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
     },{threshold:0.1});

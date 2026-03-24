@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -40,7 +39,17 @@
       "telephone": "+48507956005",
       "email": "rutkowski.ekspresy@o2.pl",
       "foundingDate": "2010",
+      "founder": {
+        "@type": "Person",
+        "name": "Robert Rutkowski",
+        "jobTitle": "Serwisant ekspresów ciśnieniowych",
+        "description": "Właściciel i serwisant z ponad 15-letnim doświadczeniem w naprawie automatycznych ekspresów ciśnieniowych.",
+        "knowsAbout": ["Naprawa ekspresów ciśnieniowych", "Diagnostyka elektroniki ekspresów", "Serwis DeLonghi", "Serwis Jura", "Serwis Saeco", "Serwis Siemens EQ", "Serwis Krups"]
+      },
       "currenciesAccepted": "PLN",
+      "paymentAccepted": "Gotówka, Przelew bankowy",
+      "priceRange": "$$",
+      "additionalType": "http://www.productontology.org/id/Espresso_machine",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "ul. Leszczynowa 19/U4",
@@ -53,6 +62,10 @@
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "16:00" }
       ],
+      "areaServed": [
+        { "@type": "City", "name": "Szczecin" },
+        { "@type": "Country", "name": "Polska", "description": "Obsługa wysyłkowa przez paczkomat InPost dla klientów z całej Polski" }
+      ],
       "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" },
       "review": [
         { "@type": "Review", "author": { "@type": "Person", "name": "Sara Wójcik" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Ekspres oddany osobiście do serwisu, naprawiony i odebrany — działa jak nowy. Pan naprawdę zna się na rzeczy. Szybko, sprawnie i uczciwie!" },
@@ -63,29 +76,32 @@
         "@type": "OfferCatalog",
         "name": "Usługi serwisowe",
         "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnostyka i wycena ekspresu", "description": "Bezpłatna diagnostyka techniczna z uczciwy kosztorysem przed naprawą" }, "priceSpecification": { "@type": "PriceSpecification", "price": "0", "priceCurrency": "PLN" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Czyszczenie i odkamienianie ekspresu", "description": "Profesjonalne czyszczenie układu wodnego, grupy zaparzającej i systemu mlecznego" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana pompy lub bojlera", "description": "Wymiana pompy wibracyjnej, termobloku lub bojlera" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": "150", "maxPrice": "350", "priceCurrency": "PLN" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa grupy zaparzającej", "description": "Regeneracja, wymiana uszczelek, smarowanie i kalibracja bloku zaparzającego" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa elektroniki ekspresu", "description": "Diagnostyka i naprawa płyt sterujących, wyświetlaczy, czujników NTC i modułów zasilania" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa ekspresu DeLonghi Szczecin" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa ekspresu Jura Szczecin" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa ekspresu Saeco Szczecin" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnostyka i wycena ekspresu" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Naprawa pompy ciśnieniowej" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wymiana bojlera i termostatu" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Czyszczenie i odkamienianie ekspresu" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wysyłka i zwrot przez paczkomat InPost" } }
         ]
       },
       "sameAs": [
         "https://ekspresy.org.pl",
         "https://www.facebook.com/profile.php?id=100063564579543",
-        "https://www.pkt.pl/firma/robert-rutkowski-ekspresy-7736024"
+        "https://www.pkt.pl/firma/robert-rutkowski-ekspresy-7736024",
+        "https://www.google.com/maps/place/?q=place_id:ChIJ42E0GWanAEcRbY1d8r7eyKU"
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "Jak dostarczyć ekspres do serwisu Rutkowski Ekspresy?", "acceptedAnswer": { "@type": "Answer", "text": "Ekspres możesz dostarczyć osobiście do serwisu przy ul. Leszczynowej 19/U4 w Szczecinie Zdroje (Pon–Pt 10:30–16:00). Dla klientów spoza Szczecina dostępna jest opcja wysyłki przez paczkomat InPost. Wcześniej skontaktuj się telefonicznie (+48 507 956 005) lub mailowo." } },
-        { "@type": "Question", "name": "Jakie marki ekspresów naprawia serwis Rutkowski?", "acceptedAnswer": { "@type": "Answer", "text": "Naprawiamy wszystkie popularne marki ekspresów ciśnieniowych: DeLonghi, Jura, Saeco, Philips, Gaggia, Siemens, Bosch, Nespresso, Krups i inne." } },
-        { "@type": "Question", "name": "Ile kosztuje naprawa ekspresu do kawy?", "acceptedAnswer": { "@type": "Answer", "text": "Diagnostyka i wycena są bezpłatne. Ostateczna cena zależy od rodzaju usterki i wymaganych części. Zawsze przedstawiamy kosztorys przed przystąpieniem do naprawy." } },
+        { "@type": "Question", "name": "Jakie marki ekspresów naprawia serwis Rutkowski?", "acceptedAnswer": { "@type": "Answer", "text": "Naprawiamy wszystkie popularne marki ekspresów ciśnieniowych: DeLonghi, Jura, Saeco, Philips, Gaggia, Siemens, Bosch, Nespresso, Krups, Melitta, Nivona, Miele, WMF i wiele innych — łącznie ponad 30 producentów." } },
+        { "@type": "Question", "name": "Ile kosztuje naprawa ekspresu do kawy?", "acceptedAnswer": { "@type": "Answer", "text": "Diagnostyka i wycena są zawsze bezpłatne. Czyszczenie i odkamienianie to kilkadziesiąt złotych, wymiana pompy lub bojlera to zazwyczaj 150–350 zł wraz z częścią. Ostateczny kosztorys przedstawiamy przed przystąpieniem do naprawy." } },
         { "@type": "Question", "name": "Jak długo trwa naprawa ekspresu?", "acceptedAnswer": { "@type": "Answer", "text": "Większość napraw realizujemy w ciągu 3–5 dni roboczych od otrzymania urządzenia. W przypadku prostych usterek może to być nawet 1–2 dni." } },
+        { "@type": "Question", "name": "Czy mogę wysłać ekspres do naprawy spoza Szczecina?", "acceptedAnswer": { "@type": "Answer", "text": "Tak. Oferujemy obsługę wysyłkową przez paczkomat InPost. Wystarczy zapakować ekspres starannie w karton z wypełnieniem i skontaktować się z nami. Po naprawie odsyłamy urządzenie paczkomatem — każde przetestowane przed odesłaniem." } },
         { "@type": "Question", "name": "Czy serwis naprawia ekspres DeLonghi w Szczecinie?", "acceptedAnswer": { "@type": "Answer", "text": "Tak, specjalizujemy się w naprawie ekspresów DeLonghi — zarówno automatycznych jak i kolbowych. Zapraszamy osobiście do serwisu w Szczecinie Zdroje lub wysyłkowo przez paczkomat." } },
         { "@type": "Question", "name": "Czy serwis naprawia ekspres Jura w Szczecinie?", "acceptedAnswer": { "@type": "Answer", "text": "Tak, naprawiamy ekspresy Jura wszystkich modeli. Zapraszamy do serwisu osobiście w Szczecinie lub skorzystaj z opcji wysyłki paczkomatem." } }
       ]
@@ -661,7 +677,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
 
     <!-- Widget Jotform Google Reviews -->
     <div id="jotform-reviews-widget" style="min-height:200px;">
-      <div id="JFWebsiteWidget-019cfce760c377efa5d9cc7a5e5c2042f994"></div>
+      <div id="JFWebsiteWidget-019cf85d1d857d3384861edfc9ae3aa49399"></div>
     </div>
 
     <!-- Statyczne opinie — fallback gdy widget się nie załaduje -->
@@ -874,7 +890,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
   </ul>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
 
   // sticky nav shadow
@@ -917,7 +933,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
     var st = document.createElement('style');
     st.textContent = '.rv{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}.rv.in{opacity:1;transform:none}';
     document.head.appendChild(st);
-    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header,.galeria-item');
+    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header');
     var obs = new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
     },{threshold:0.1});
@@ -979,7 +995,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
     var fallback = document.getElementById('reviewsFallback');
     if (widgetContainer && fallback) {
       var hasWidget = widgetContainer.querySelector('iframe') || widgetContainer.querySelector('[class*="jotform"]');
-      var jfDiv = document.getElementById('JFWebsiteWidget-019cfce760c377efa5d9cc7a5e5c2042f994');
+      var jfDiv = document.getElementById('JFWebsiteWidget-019cf85d1d857d3384861edfc9ae3aa49399');
       if (jfDiv && jfDiv.children.length > 0) hasWidget = true;
       if (!hasWidget) {
         widgetContainer.style.display = 'none';
@@ -992,7 +1008,7 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
 </script>
 
 <!-- Jotform Google Reviews Widget -->
-<script src="https://www.jotform.com/website-widgets/embed/019cfce760c377efa5d9cc7a5e5c2042f994" defer></script>
+<script src="https://www.jotform.com/website-widgets/embed/019cf85d1d857d3384861edfc9ae3aa49399" defer></script>
 
 </body>
 </html>

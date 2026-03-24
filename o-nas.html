@@ -19,21 +19,73 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Rutkowski Ekspresy",
-  "description": "Serwis ekspresów do kawy w Szczecinie. Specjalizujemy się w naprawie DeLonghi, Jura, Saeco, Philips, Krups i innych marek.",
-  "foundingDate": "2010",
-  "founder": { "@type": "Person", "name": "Robert Rutkowski" },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "ul. Leszczynowa 19/U4",
-    "addressLocality": "Szczecin",
-    "postalCode": "70-766",
-    "addressCountry": "PL"
-  },
-  "telephone": "+48507956005",
-  "url": "https://ekspresy.org.pl",
-  "sameAs": ["https://www.facebook.com/profile.php?id=100063564579543"]
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ekspresy.org.pl/#business",
+      "name": "Rutkowski Ekspresy",
+      "description": "Serwis ekspresów do kawy w Szczecinie. Specjalizujemy się w naprawie DeLonghi, Jura, Saeco, Philips, Krups i innych marek.",
+      "foundingDate": "2010",
+      "url": "https://ekspresy.org.pl",
+      "telephone": "+48507956005",
+      "email": "rutkowski.ekspresy@o2.pl",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Leszczynowa 19/U4",
+        "addressLocality": "Szczecin",
+        "addressRegion": "Zachodniopomorskie",
+        "postalCode": "70-766",
+        "addressCountry": "PL"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 53.3827, "longitude": 14.5816 },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "16:00" }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Szczecin" },
+        { "@type": "Country", "name": "Polska" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100063564579543",
+        "https://www.pkt.pl/firma/robert-rutkowski-ekspresy-7736024",
+        "https://www.google.com/maps/place/?q=place_id:ChIJ42E0GWanAEcRbY1d8r7eyKU"
+      ]
+    },
+    {
+      "@type": "AboutPage",
+      "name": "O nas — Rutkowski Ekspresy",
+      "description": "15 lat doświadczenia w naprawie ekspresów do kawy. Poznaj Roberta Rutkowskiego i historię serwisu przy ul. Leszczynowej w Szczecinie.",
+      "url": "https://ekspresy.org.pl/o-nas",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Robert Rutkowski",
+        "jobTitle": "Serwisant ekspresów ciśnieniowych",
+        "description": "Właściciel i serwisant Rutkowski Ekspresy. Ponad 15 lat doświadczenia w naprawie automatycznych ekspresów ciśnieniowych wszystkich popularnych marek. Od 2010 roku prowadzi serwis przy ul. Leszczynowej w Szczecinie Zdroje. Ponad 500 naprawionych urządzeń, 98% zadowolonych klientów.",
+        "worksFor": { "@id": "https://ekspresy.org.pl/#business" },
+        "knowsAbout": [
+          "Naprawa ekspresów ciśnieniowych",
+          "Diagnostyka elektroniki ekspresów",
+          "Serwis ekspresów DeLonghi (ECAM, Magnifica, Dinamica, PrimaDonna)",
+          "Serwis ekspresów Jura (E, ENA, S, Z, X, WE)",
+          "Serwis ekspresów Saeco (PicoBaristo, Xelsis, Incanto, GranBaristo)",
+          "Serwis ekspresów Siemens EQ",
+          "Serwis ekspresów Krups (Intuition, Evidence, EA)",
+          "Naprawa grup zaparzających i bloków ARAM",
+          "Naprawa pomp wibracyjnych i bojlerów",
+          "Diagnostyka płyt sterujących i czujników NTC",
+          "Naprawa systemów mlecznych (LatteCrema, I.W.S., cappuccinatory)"
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://ekspresy.org.pl/" },
+        { "@type": "ListItem", "position": 2, "name": "O nas", "item": "https://ekspresy.org.pl/o-nas" }
+      ]
+    }
+  ]
 }
 </script>
 
