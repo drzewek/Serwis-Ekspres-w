@@ -931,9 +931,9 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
   // scroll reveal
   if('IntersectionObserver' in window){
     var st = document.createElement('style');
-    st.textContent = '.rv{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}.rv.in{opacity:1;transform:none}';
+    st.textContent = '.rv{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s ease}.rv.in{opacity:1;transform:none}.rv2{transition-delay:.12s}.rv3{transition-delay:.24s}';
     document.head.appendChild(st);
-    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header');
+    var els = document.querySelectorAll('.service-card,.process-step,.testimonial,.brand-card,.faq-item,.contact-detail,.section-header,.rv');
     var obs = new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
     },{threshold:0.1});
