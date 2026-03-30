@@ -1,0 +1,105 @@
+# ============================================================
+# WRANGLER.TOML — CO SPRAWDZIĆ / ZMIENIĆ
+# ============================================================
+#
+# Twój serwis działa na Cloudflare Workers. Sposób dodania
+# nowych stron zależy od tego, JAK worker serwuje pliki.
+# Poniżej 3 scenariusze — sprawdź który pasuje do Twojego setupu.
+#
+# ============================================================
+
+# ----------------------------------------------------------
+# SCENARIUSZ A: Cloudflare Pages / Workers Sites (KV Assets)
+# ----------------------------------------------------------
+# Jeśli Twój wrangler.toml wygląda mniej więcej tak:
+#
+#   [site]
+#   bucket = "./public"    # lub "./dist", "./build", "./"
+#
+# To NIC NIE MUSISZ ZMIENIAĆ w wrangler.toml!
+# Wystarczy wrzucić pliki HTML do tego samego folderu:
+#
+#   ./public/naprawa-delonghi.html
+#   ./public/naprawa-jura.html
+#   ./public/naprawa-saeco.html
+#   ./public/naprawa-siemens.html
+#   ./public/naprawa-krups.html
+#
+# Cloudflare Workers Sites automatycznie serwuje pliki
+# po nazwie, więc /naprawa-delonghi → naprawa-delonghi.html
+#
+# Upewnij się tylko, że worker ma logikę obsługi ścieżek
+# bez .html (asset handler powinien próbować dodać .html
+# do ścieżki, jeśli plik bez rozszerzenia nie istnieje).
+
+
+# ----------------------------------------------------------
+# SCENARIUSZ B: Ręczny routing w worker.js / index.js
+# ----------------------------------------------------------
+# Jeśli worker ma ręczny routing (switch/case lub if/else),
+# np. coś w stylu:
+#
+#   if (path === '/o-nas') return serveFile('o-nas.html')
+#   if (path === '/uslugi') return serveFile('uslugi.html')
+#
+# To MUSISZ DODAĆ 5 nowych routów:
+#
+#   if (path === '/naprawa-delonghi') return serveFile('naprawa-delonghi.html')
+#   if (path === '/naprawa-jura') return serveFile('naprawa-jura.html')
+#   if (path === '/naprawa-saeco') return serveFile('naprawa-saeco.html')
+#   if (path === '/naprawa-siemens') return serveFile('naprawa-siemens.html')
+#   if (path === '/naprawa-krups') return serveFile('naprawa-krups.html')
+#
+# Lub jeśli masz bardziej generyczny handler:
+#
+#   // Automatyczny routing: ścieżka → plik .html
+#   const filename = path.slice(1) + '.html'
+#   const file = await getAsset(filename)
+#   if (file) return new Response(file, { headers: { 'Content-Type': 'text/html' } })
+
+
+# ----------------------------------------------------------
+# SCENARIUSZ C: Cloudflare Pages (bez wrangler.toml)
+# ----------------------------------------------------------
+# Jeśli używasz Cloudflare Pages z automatycznym deployem
+# z GitHub, to po prostu commitnij pliki do repo:
+#
+#   git add naprawa-delonghi.html naprawa-jura.html \
+#           naprawa-saeco.html naprawa-siemens.html \
+#           naprawa-krups.html sitemap.xml
+#   git commit -m "Dodaj landing pages marek + zaktualizowany sitemap"
+#   git push
+#
+# Cloudflare Pages automatycznie zbuduje i opublikuje.
+
+
+# ============================================================
+# CHECKLIST PO DEPLOY:
+# ============================================================
+#
+# 1. [ ] Sprawdź czy strony otwierają się:
+#        https://ekspresy.org.pl/naprawa-delonghi
+#        https://ekspresy.org.pl/naprawa-jura
+#        https://ekspresy.org.pl/naprawa-saeco
+#        https://ekspresy.org.pl/naprawa-siemens
+#        https://ekspresy.org.pl/naprawa-krups
+#
+# 2. [ ] Sprawdź czy sitemap jest dostępny:
+#        https://ekspresy.org.pl/sitemap.xml
+#
+# 3. [ ] Wyślij sitemap do Google Search Console:
+#        → Mapy witryn → Dodaj nową mapę witryny
+#        → Wpisz: sitemap.xml → Prześlij
+#
+# 4. [ ] Sprawdź sekcję marek na stronie głównej:
+#        https://ekspresy.org.pl/ → przewiń do sekcji "Marki"
+#
+# 5. [ ] Test Schema.org na każdej nowej stronie:
+#        https://search.google.com/test/rich-results
+#        → Wklej URL każdej landing page
+#
+# 6. [ ] Opcjonalnie: wymuś indeksację w GSC:
+#        → Inspekcja adresu URL → wklej każdy nowy URL
+#        → "Poproś o indeksowanie"
+#
+# ============================================================
