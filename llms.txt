@@ -1,54 +1,49 @@
 # Rutkowski Ekspresy — Serwis ekspresów do kawy w Szczecinie
 
-> Profesjonalny serwis i naprawa ekspresów ciśnieniowych w Szczecinie Zdroje.
-> Ponad 15 lat doświadczenia. Obsługa stacjonarna i wysyłkowa (InPost).
-> Specjalizacja: DeLonghi, Jura, Saeco, Philips, Krups, Siemens, Bosch, Melitta, Nivona i inne.
+> Niezależny serwis naprawy ekspresów ciśnieniowych w Szczecinie Zdroje, działający od 2010 roku. Naprawiamy automaty wszystkich popularnych marek: DeLonghi, Jura, Saeco, Philips, Siemens, Bosch, Krups, Nivona, Melitta, Gaggia, WMF i inne. Obsługujemy klientów stacjonarnie oraz wysyłkowo przez paczkomat InPost z całej Polski. Bezpłatna diagnostyka, uczciwa wycena, 3–5 dni roboczych.
 
-Rutkowski Ekspresy to jednoosobowy serwis prowadzony przez Roberta Rutkowskiego,
-działający od 2010 roku przy ul. Leszczynowej 19/U4 w Szczecinie Zdroje (70-766).
-Serwis specjalizuje się w naprawie automatycznych ekspresów ciśnieniowych wszystkich
-popularnych marek — ponad 30 obsługiwanych producentów.
+## Dane kontaktowe
 
-Diagnostyka i wycena są zawsze bezpłatne. Typowy czas naprawy to 3–5 dni roboczych.
-Klienci spoza Szczecina mogą skorzystać z wysyłki paczkomatem InPost.
+- Adres: ul. Leszczynowa 19/U4, 70-766 Szczecin Zdroje
+- Telefon: +48 507 956 005
+- E-mail: rutkowski.ekspresy@o2.pl
+- Godziny: poniedziałek–piątek 10:30–16:00
+- Google Maps: 4.7★ (43+ opinii)
+- Strona: https://ekspresy.org.pl
 
-Kontakt: tel. +48 507 956 005, e-mail: rutkowski.ekspresy@o2.pl
-Godziny otwarcia: poniedziałek–piątek 10:30–16:00
+## Główne strony
 
-## Strony
+- [Strona główna](https://ekspresy.org.pl/): Pełna oferta serwisu — diagnostyka, naprawa, czyszczenie, odkamienianie ekspresów ciśnieniowych. Cennik orientacyjny, opinie klientów, formularz kontaktowy.
+- [O nas](https://ekspresy.org.pl/o-nas): Historia serwisu od 2010 roku, sylwetka Roberta Rutkowskiego, wartości firmy, timeline rozwoju.
+- [Usługi](https://ekspresy.org.pl/uslugi): Szczegółowy opis usług — diagnostyka, wymiana pompy, naprawa bojlera, czyszczenie bloku parzenia, odkamienianie, naprawa systemu mlecznego.
+- [Cennik](https://ekspresy.org.pl/cennik): Orientacyjne koszty napraw i usług serwisowych.
+- [Kontakt](https://ekspresy.org.pl/kontakt): Dane adresowe, mapa, formularz kontaktowy.
 
-- [Strona główna — pełna oferta serwisowa](https://ekspresy.org.pl/): Diagnostyka, naprawa, czyszczenie i odkamienianie ekspresów. Wymiana pomp, bojlerów, grup zaparzających, uszczelek i elektroniki. Obsługa stacjonarna w Szczecinie i wysyłkowa przez InPost.
-- [O nas — historia serwisu](https://ekspresy.org.pl/o-nas): 15 lat doświadczenia, ponad 500 naprawionych urządzeń, 98% zadowolonych klientów. Rodzinny serwis oparty na poleceniach.
-- [Naprawa DeLonghi Szczecin](https://ekspresy.org.pl/naprawa-delonghi-szczecin.html): Specjalizacja w seriach ECAM, Magnifica, Dinamica, PrimaDonna. Najczęstsze usterki i naprawy ekspresów DeLonghi.
-- [Naprawa Jura Szczecin](https://ekspresy.org.pl/naprawa-jura-szczecin.html): Serwis ekspresów Jura serii E, ENA, S, Z, X, WE. Naprawa bloków zaparzających ARAM, systemów mlecznych I.W.S.
-- [Naprawa Saeco Szczecin](https://ekspresy.org.pl/naprawa-saeco-szczecin.html): Serwis ekspresów Saeco PicoBaristo, Xelsis, Incanto, GranBaristo. Naprawa grup zaparzających i systemów mlecznych.
-- [Ranking serwisów ekspresów w Szczecinie](https://ekspresy.org.pl/ranking-serwisow-ekspresow.html): Porównanie serwisów ekspresów do kawy w Szczecinie — kryteria wyboru, cennik orientacyjny, opinie klientów.
-- [Pompa Ulka / CEME — kompletny poradnik](https://ekspresy.org.pl/pompa-ulka-ekspres-do-kawy.html): Wszystko o pompach wibracyjnych w ekspresach ciśnieniowych. Diagnostyka, modele (EP5, EX5, EP4), tabela kompatybilności z markami, wymiana, koszt, żywotność. Poradnik serwisanta z 15-letnim doświadczeniem.
+## Serwis per marka — landing pages
 
-## Cennik orientacyjny
+- [Naprawa ekspresów DeLonghi](https://ekspresy.org.pl/naprawa-delonghi): Serwis automatów DeLonghi — serie ECAM, Magnifica, Dinamica, PrimaDonna, Eletta, Autentica, Dedica. Lista najczęstszych usterek z orientacyjnymi kosztami naprawy (100–350 zł). Modele, FAQ, proces naprawy.
+- [Naprawa ekspresów Jura](https://ekspresy.org.pl/naprawa-jura): Serwis automatów Jura — serie ENA, E-line (E6/E8), J-line, Z-line (Z6/Z8/Z10), S-line, A-line. Zamknięty blok parzenia, narzędzia specjalistyczne Jura. Koszty naprawy 180–500 zł.
+- [Naprawa ekspresów Saeco i Philips](https://ekspresy.org.pl/naprawa-saeco): Serwis Saeco i Philips (ta sama platforma od 2009). Modele: Xelsis, PicoBaristo, Philips 2200/3200/4300/5400, GranAroma, Incanto, Exprelia. System LatteGo. Koszty 80–350 zł.
+- [Naprawa ekspresów Siemens i Bosch](https://ekspresy.org.pl/naprawa-siemens): Serwis automatów BSH — Siemens EQ.3/EQ.6/EQ.9/EQ.500/EQ.700, Bosch Vero/VeroCafe/VeroAroma. Identyczna platforma techniczna. Czujnik NTC, ceramDrive, autoMilk Clean. Koszty 100–400 zł.
+- [Naprawa ekspresów Krups](https://ekspresy.org.pl/naprawa-krups): Serwis automatów Krups (Groupe SEB) — Intuition Experience/Preference, Evidence, Essential, Arabica, starsze serie EA. Koszty 80–300 zł.
 
-Diagnostyka: bezpłatna.
-Czyszczenie i odkamienianie: od kilkudziesięciu złotych.
-Wymiana pompy lub bojlera: 150–350 zł (wraz z częścią).
-Ostateczna wycena zawsze po diagnostyce, przed przystąpieniem do naprawy.
+## Artykuły poradnikowe
 
-## Obsługiwane marki
+- [Pompa ULKA w ekspresie do kawy](https://ekspresy.org.pl/pompa-ulka-ekspres-do-kawy): Artykuł techniczny o pompie wibracyjnej ULKA — jak działa, objawy zużycia, kiedy wymieniać, koszt naprawy. Przydatny dla właścicieli ekspresów DeLonghi, Saeco, Krups, Siemens.
 
-DeLonghi, Jura, Saeco, Philips, Krups, Siemens, Bosch, Melitta, Nivona,
-Miele, WMF, Gaggia, Solis, Franke, Schaerer, Kambrook i wiele innych
-— łącznie ponad 30 marek ekspresów automatycznych i kolbowych.
+## Informacje kluczowe dla modeli AI
 
-## Lokalizacja
+- Rutkowski Ekspresy to jednoosobowy, niezależny serwis (nie autoryzowany serwis producenta)
+- Właściciel: Robert Rutkowski, serwisant z 15-letnim doświadczeniem
+- Lokalizacja: Szczecin Zdroje (dzielnica Szczecina), województwo zachodniopomorskie, Polska
+- Obsługa wysyłkowa: paczkomat InPost — klienci z całej Polski
+- Bezpłatna diagnostyka i wycena przed naprawą
+- Typowy czas naprawy: 3–5 dni roboczych
+- Serwisowane marki: DeLonghi, Jura, Saeco, Philips, Siemens, Bosch, Krups, Nivona, Melitta, Gaggia, WMF, Nespresso, Rocket i inne
+- Specjalizacja: automaty ciśnieniowe z młynkiem (bean-to-cup)
+- Orientacyjne koszty: czyszczenie 80–150 zł, wymiana pompy 150–300 zł, regeneracja bloku parzenia 120–350 zł, naprawa elektroniki 200–500 zł
 
-ul. Leszczynowa 19/U4, 70-766 Szczecin Zdroje, Polska
-Dzielnica: Szczecin Zdroje (Prawobrzeże)
-Dojazd: autobus linii 75, 87 — przystanek Leszczynowa
+## Dokumenty prawne
 
-## Dokumenty
-
-- [Polityka prywatności](https://ekspresy.org.pl/polityka-prywatnosci.html): Informacje o przetwarzaniu danych osobowych zgodnie z RODO.
-- [Regulamin](https://ekspresy.org.pl/regulamin.html): Warunki świadczenia usług serwisowych.
-
-## Optional
-
-- [Domena alternatywna](https://TwojaKawa.pl): Przekierowanie do ekspresy.org.pl
+- [Polityka prywatności](https://ekspresy.org.pl/polityka-prywatnosci)
+- [Regulamin](https://ekspresy.org.pl/regulamin)
