@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naprawa ekspresów DeLonghi Szczecin — Serwis ECAM, Magnifica, Dinamica | Rutkowski Ekspresy</title>
+<meta name="description" content="Profesjonalny serwis ekspresów DeLonghi w Szczecinie. Naprawiamy serie ECAM, Magnifica, Dinamica, PrimaDonna, Eletta. Bezpłatna wycena, 3–5 dni roboczych, wysyłka InPost. Tel. 507 956 005.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ekspresy.org.pl/naprawa-delonghi">
+<meta property="og:title" content="Naprawa ekspresów DeLonghi Szczecin — Rutkowski Ekspresy">
+<meta property="og:description" content="Serwis DeLonghi: ECAM, Magnifica, Dinamica, PrimaDonna. Bezpłatna wycena, oryginalne części, wysyłka InPost.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ekspresy.org.pl/naprawa-delonghi">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0e0b09;--surface:#1a1512;--surface2:#241e19;--crema:#c9a96e;--milk:#f5ede4;--text:#d4c8b8;--muted:#8a7e72;--accent:#e8a94a;--red:#c0392b;--green:#27ae60}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--crema);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--surface) 0%,#1e1710 100%);border-bottom:1px solid rgba(201,169,110,.15);padding:3rem 1.5rem 2.5rem;text-align:center}
+.hero .brand-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:var(--crema);margin-bottom:.8rem;display:block}
+.hero h1{font-size:1.65rem;color:var(--milk);line-height:1.3;margin-bottom:1rem;font-weight:700}
+.hero h1 span{color:var(--crema)}
+.hero .sub{font-size:.92rem;color:var(--muted);max-width:600px;margin:0 auto 1.5rem}
+.hero .cta-row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.4rem;border-radius:8px;font-size:.88rem;font-weight:600;transition:all .2s}
+.btn-primary{background:var(--crema);color:var(--bg)}
+.btn-primary:hover{background:var(--accent);text-decoration:none}
+.btn-outline{border:1px solid rgba(201,169,110,.3);color:var(--crema)}
+.btn-outline:hover{border-color:var(--crema);text-decoration:none}
+
+/* SECTIONS */
+.container{max-width:740px;margin:0 auto;padding:0 1.5rem}
+section{padding:2.5rem 0}
+.section-border{border-top:1px solid rgba(201,169,110,.1)}
+.section-title{font-size:1.15rem;color:var(--milk);font-weight:700;margin-bottom:1.2rem}
+.section-title::before{content:'';display:inline-block;width:3px;height:1em;background:var(--crema);margin-right:.6rem;vertical-align:middle;border-radius:2px}
+
+/* MODELS GRID */
+.models-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem}
+.model-card{background:var(--surface);border:1px solid rgba(201,169,110,.08);border-radius:8px;padding:1rem 1.2rem}
+.model-card h3{font-size:.9rem;color:var(--milk);margin-bottom:.3rem}
+.model-card p{font-size:.78rem;color:var(--muted);line-height:1.5}
+
+/* FAULTS */
+.fault-list{list-style:none}
+.fault-item{background:var(--surface);border-left:3px solid var(--crema);padding:1rem 1.2rem;margin-bottom:.6rem;border-radius:0 8px 8px 0}
+.fault-item strong{display:block;color:var(--milk);font-size:.9rem;margin-bottom:.2rem}
+.fault-item span{font-size:.82rem;color:var(--muted)}
+.fault-item .price{float:right;color:var(--accent);font-weight:600;font-size:.85rem}
+
+/* PROCESS */
+.process-steps{counter-reset:step}
+.step{display:flex;gap:1rem;margin-bottom:1.2rem;align-items:flex-start}
+.step-num{counter-increment:step;flex-shrink:0;width:36px;height:36px;background:var(--surface2);border:1px solid rgba(201,169,110,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;color:var(--crema)}
+.step-num::after{content:counter(step)}
+.step-body h4{font-size:.92rem;color:var(--milk);margin-bottom:.2rem}
+.step-body p{font-size:.82rem;color:var(--muted)}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid rgba(201,169,110,.08);padding:1rem 0}
+.faq-q{font-weight:600;color:var(--milk);font-size:.92rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--crema)}
+.faq-q.open::after{content:'−'}
+.faq-a{font-size:.85rem;color:var(--muted);max-height:0;overflow:hidden;transition:max-height .3s,padding .3s}
+.faq-a.open{max-height:300px;padding-top:.6rem}
+
+/* TRUST BAR */
+.trust-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,169,110,.08);border-radius:8px;overflow:hidden;margin:1.5rem 0}
+.trust-item{background:var(--surface);padding:1rem;text-align:center}
+.trust-item .num{font-size:1.3rem;font-weight:700;color:var(--crema)}
+.trust-item .label{font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:.2rem}
+
+/* CTA BOTTOM */
+.cta-section{background:linear-gradient(135deg,var(--surface2),#1e1710);border-radius:12px;padding:2rem 1.5rem;text-align:center;margin:2rem 0}
+.cta-section h2{font-size:1.1rem;color:var(--milk);margin-bottom:.5rem}
+.cta-section p{font-size:.85rem;color:var(--muted);margin-bottom:1.2rem}
+.cta-phone{font-size:1.3rem;font-weight:700;color:var(--crema);display:block;margin-bottom:.8rem}
+
+/* BREADCRUMB */
+.breadcrumb{padding:1rem 1.5rem;font-size:.75rem;color:var(--muted)}
+.breadcrumb a{color:var(--muted)}
+
+/* FOOTER */
+footer{border-top:1px solid rgba(201,169,110,.08);padding:1.5rem;text-align:center;font-size:.72rem;color:var(--muted)}
+
+@media(max-width:500px){
+  .hero h1{font-size:1.35rem}
+  .models-grid{grid-template-columns:1fr}
+  .trust-bar{grid-template-columns:1fr}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Naprawa ekspresów DeLonghi — Rutkowski Ekspresy",
+  "description": "Profesjonalny serwis i naprawa ekspresów ciśnieniowych DeLonghi w Szczecinie. Serie ECAM, Magnifica, Dinamica, PrimaDonna, Eletta. Bezpłatna diagnostyka.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Rutkowski Ekspresy",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Leszczynowa 19/U4",
+      "addressLocality": "Szczecin",
+      "postalCode": "70-766",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48507956005",
+    "url": "https://ekspresy.org.pl",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.3975,
+      "longitude": 14.5833
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "43"
+    }
+  },
+  "serviceType": "Naprawa ekspresów do kawy",
+  "areaServed": [
+    {"@type": "City", "name": "Szczecin"},
+    {"@type": "Country", "name": "Polska"}
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "De'Longhi"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ile kosztuje naprawa ekspresu DeLonghi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Koszt naprawy zależy od usterki. Proste czyszczenie i odkamienianie to 80–150 zł. Wymiana pompy: 150–280 zł. Wymiana bojlera lub płytki sterującej: 200–400 zł. Diagnostyka i wycena są zawsze bezpłatne — decydujesz po poznaniu kosztorysu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak długo trwa naprawa DeLonghi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Większość napraw realizujemy w ciągu 3–5 dni roboczych. Proste usterki (czyszczenie, wymiana uszczelki) często w 1–2 dni. Czas może się wydłużyć, jeśli konieczne jest zamówienie specjalistycznej części."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy naprawiacie DeLonghi wysyłkowo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak. Klienci spoza Szczecina mogą wysłać ekspres przez paczkomat InPost. Skontaktuj się telefonicznie (507 956 005) lub mailowo, ustalimy szczegóły wysyłki i diagnozujemy po otrzymaniu."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="/">Strona główna</a> → Naprawa DeLonghi
+</nav>
+
+<section class="hero">
+  <span class="brand-label">Serwis marki De'Longhi</span>
+  <h1>Naprawa ekspresów <span>DeLonghi</span> w Szczecinie</h1>
+  <p class="sub">Serwisujemy wszystkie serie automatów DeLonghi — od kompaktowej Magnifica S po flagową PrimaDonna Soul. Bezpłatna diagnostyka, oryginalne części, 15 lat doświadczenia.</p>
+  <div class="cta-row">
+    <a href="tel:+48507956005" class="btn btn-primary">📞 507 956 005</a>
+    <a href="mailto:rutkowski.ekspresy@o2.pl" class="btn btn-outline">✉ Napisz do nas</a>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <div class="trust-bar">
+      <div class="trust-item">
+        <div class="num">15 lat</div>
+        <div class="label">Doświadczenia</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">4.7★</div>
+        <div class="label">Opinie Google</div>
+      </div>
+      <div class="trust-item">
+        <div class="num">3–5 dni</div>
+        <div class="label">Czas naprawy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <h2 class="section-title">Które modele DeLonghi naprawiamy?</h2>
+    <p style="font-size:.88rem;margin-bottom:1.2rem;color:var(--muted)">Serwisujemy <strong style="color:var(--milk)">wszystkie serie automatów i ekspresów ciśnieniowych DeLonghi</strong>, zarówno domowe jak i profesjonalne. Poniżej najczęściej trafiające do nas modele:</p>
+    <div class="models-grid">
+      <div class="model-card">
+        <h3>Magnifica / Magnifica S</h3>
+        <p>Serie ECAM, ESAM — najpopularniejsze automaty. Częste usterki: pompa, blok parzenia, młynek.</p>
+      </div>
+      <div class="model-card">
+        <h3>Dinamica / Dinamica Plus</h3>
+        <p>Serie ECAM 350–370. Problemy z panelem dotykowym, systemem mlecznym LatteCrema.</p>
+      </div>
+      <div class="model-card">
+        <h3>PrimaDonna</h3>
+        <p>Seria premium: Soul, Elite, Class. Zaawansowana elektronika, karafka do mleka, ekran TFT.</p>
+      </div>
+      <div class="model-card">
+        <h3>Eletta Explore / Eletta Plus</h3>
+        <p>Modele z Cold Brew, 40+ przepisów. Usterki: flowmeter, czujniki temperatury, wyświetlacz.</p>
+      </div>
+      <div class="model-card">
+        <h3>Autentica / Perfecta</h3>
+        <p>Kompaktowe automaty. Typowe problemy: zablokowany zaparzacz, brak ciśnienia, wycieki.</p>
+      </div>
+      <div class="model-card">
+        <h3>Dedica / Stilosa / ECP</h3>
+        <p>Ekspesy kolbowe. Naprawiamy: pompy, termostat, dysze pary, uszczelki portafiltru.</p>
+      </div>
+    </div>
+    <p style="font-size:.82rem;color:var(--muted);margin-top:1rem">Nie widzisz swojego modelu? Zadzwoń — naprawiamy praktycznie każdy ekspres DeLonghi, niezależnie od rocznika.</p>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <h2 class="section-title">Najczęstsze usterki DeLonghi</h2>
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:1rem">Znamy te problemy na pamięć — naprawiamy je codziennie. Orientacyjne koszty podane z częściami:</p>
+    <ul class="fault-list">
+      <li class="fault-item">
+        <span class="price">100–250 zł</span>
+        <strong>Ekspres nie robi kawy / kawa leci słabo</strong>
+        <span>Najczęstsza przyczyna: zatkana pompa ulka, zanieczyszczony obwód wodny lub zablokowany blok parzenia. Wymiana pompy przywraca pełne ciśnienie 9 bar.</span>
+      </li>
+      <li class="fault-item">
+        <span class="price">80–150 zł</span>
+        <strong>Komunikat „Wstaw zaparzacz" / zaparzacz nie wchodzi</strong>
+        <span>Zużyte uszczelki, deformacja prowadnic lub zabrudzenie mechanizmu. Czyszczenie + wymiana uszczelek rozwiązuje problem.</span>
+      </li>
+      <li class="fault-item">
+        <span class="price">120–200 zł</span>
+        <strong>Ekspres hałasuje / stuka / zgrzyta</strong>
+        <span>Zużyte łożyska młynka ceramicznego, luźne elementy napędu zaparzacza lub zaschły smar na prowadnicach.</span>
+      </li>
+      <li class="fault-item">
+        <span class="price">150–350 zł</span>
+        <strong>Kawa zbyt zimna / błąd temperatury</strong>
+        <span>Uszkodzony bojler, termostat lub termobezpiecznik. Wymiana przywraca prawidłową temperaturę parzenia (90–96°C).</span>
+      </li>
+      <li class="fault-item">
+        <span class="price">80–120 zł</span>
+        <strong>Nie spienia mleka / system LatteCrema nie działa</strong>
+        <span>Zatkana dysza, uszkodzony silikonowy wężyk lub zużyta uszczelka karafki. Czyszczenie lub wymiana elementów systemu.</span>
+      </li>
+      <li class="fault-item">
+        <span class="price">80–150 zł</span>
+        <strong>Woda pod ekspresem / ekspres cieknie</strong>
+        <span>Pęknięte węże silikonowe, zużyte o-ringi lub uszkodzona uszczelka bloku parzenia. Wymiana na oryginalne części.</span>
+      </li>
+    </ul>
+    <p style="font-size:.78rem;color:var(--muted);margin-top:.8rem">* Podane ceny są orientacyjne i zawierają koszt części zamiennej. Dokładna wycena — zawsze bezpłatna — po diagnostyce.</p>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <h2 class="section-title">Jak wygląda naprawa?</h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <h4>Kontakt i opis usterki</h4>
+          <p>Zadzwoń pod 507 956 005 lub napisz mail. Opowiedz, co się dzieje z ekspresem — często już na tym etapie mogę wstępnie określić przyczynę.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <h4>Dostawa ekspresu</h4>
+          <p>Przynieś osobiście do serwisu przy ul. Leszczynowej 19/U4 w Szczecinie Zdroje. Klienci spoza miasta — paczkomat InPost.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <h4>Bezpłatna diagnostyka i kosztorys</h4>
+          <p>Rozkładam ekspres, identyfikuję usterkę i przedstawiam dokładny kosztorys. Ty decydujesz, czy naprawiamy — bez zobowiązań.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <h4>Naprawa i testy</h4>
+          <p>Po akceptacji przystępuję do naprawy — zazwyczaj 3–5 dni roboczych. Każdy ekspres jest testowany przed odesłaniem: ciśnienie, temperatura, system mleczny.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <h2 class="section-title">Dlaczego naprawiać zamiast kupować nowy?</h2>
+    <p style="font-size:.88rem;margin-bottom:1rem">Nowy automat DeLonghi Magnifica to wydatek od 1 200 do 4 000 zł, a flagowe modele PrimaDonna kosztują 5 000–8 000 zł. Naprawa to zwykle <strong style="color:var(--milk)">10–25% wartości nowego urządzenia</strong>.</p>
+    <p style="font-size:.88rem;margin-bottom:1rem">Włoska inżynieria DeLonghi jest zaprojektowana z myślą o długiej eksploatacji. Wymiana zużytych części — pompy, uszczelek, bloku parzenia — przywraca ekspres do stanu fabrycznego. To nie tylko oszczędność, ale też mniej elektroniki na wysypisku.</p>
+    <p style="font-size:.85rem;color:var(--muted)">Jeśli naprawa nie ma sensu ekonomicznego — powiem Ci to wprost. Nie zarabiam na zbędnych naprawach.</p>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <h2 class="section-title">Pytania o serwis DeLonghi</h2>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Ile kosztuje naprawa ekspresu DeLonghi?</div>
+      <div class="faq-a">Koszt zależy od rodzaju usterki i potrzebnych części. Proste czyszczenie i odkamienianie: 80–150 zł. Wymiana pompy: 150–280 zł. Wymiana bojlera lub elektroniki: 200–400 zł. Diagnostyka i wycena są zawsze bezpłatne — decydujesz po poznaniu kosztorysu.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Jak długo trwa naprawa DeLonghi?</div>
+      <div class="faq-a">Większość napraw: 3–5 dni roboczych. Proste usterki (wymiana uszczelki, czyszczenie) często w 1–2 dni. Czas może się wydłużyć przy rzadkich częściach zamiennych — informuję o tym z góry.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Czy naprawiacie ekspres DeLonghi wysyłkowo?</div>
+      <div class="faq-a">Tak. Klienci z całej Polski mogą wysłać ekspres przez paczkomat InPost. Zadzwoń najpierw (507 956 005), ustalimy szczegóły. Po naprawie odsyłam przetestowane urządzenie z powrotem paczkomatem.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Używacie oryginalnych części DeLonghi?</div>
+      <div class="faq-a">Tak, stosuję oryginalne części lub zamienniki premium sprawdzone na setkach napraw. Nigdy najtańszych podróbek — zależy mi na tym, żeby ekspres działał stabilnie przez lata, nie tygodnie.</div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="cta-section">
+    <h2>Twój DeLonghi potrzebuje naprawy?</h2>
+    <p>Zadzwoń lub napisz — omówimy usterkę i ustalimy termin.</p>
+    <a href="tel:+48507956005" class="cta-phone">📞 +48 507 956 005</a>
+    <div class="cta-row">
+      <a href="mailto:rutkowski.ekspresy@o2.pl" class="btn btn-primary">✉ Napisz e-mail</a>
+      <a href="/" class="btn btn-outline">← Strona główna</a>
+    </div>
+    <p style="font-size:.78rem;color:var(--muted);margin-top:1rem">ul. Leszczynowa 19/U4, 70-766 Szczecin Zdroje · pon–pt 10:30–16:00</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Rutkowski Ekspresy — Serwis ekspresów do kawy w Szczecinie od 2010 roku</p>
+  <p style="margin-top:.3rem">De'Longhi jest zarejestrowanym znakiem towarowym De'Longhi S.p.A. Rutkowski Ekspresy jest niezależnym serwisem.</p>
+</footer>
+
+</body>
+</html>
