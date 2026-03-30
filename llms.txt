@@ -21,11 +21,11 @@
 
 ## Serwis per marka — landing pages
 
-- [Naprawa ekspresów DeLonghi](https://ekspresy.org.pl/naprawa-delonghi): Serwis automatów DeLonghi — serie ECAM, Magnifica, Dinamica, PrimaDonna, Eletta, Autentica, Dedica. Lista najczęstszych usterek z orientacyjnymi kosztami naprawy (100–350 zł). Modele, FAQ, proces naprawy.
-- [Naprawa ekspresów Jura](https://ekspresy.org.pl/naprawa-jura): Serwis automatów Jura — serie ENA, E-line (E6/E8), J-line, Z-line (Z6/Z8/Z10), S-line, A-line. Zamknięty blok parzenia, narzędzia specjalistyczne Jura. Koszty naprawy 180–500 zł.
-- [Naprawa ekspresów Saeco i Philips](https://ekspresy.org.pl/naprawa-saeco): Serwis Saeco i Philips (ta sama platforma od 2009). Modele: Xelsis, PicoBaristo, Philips 2200/3200/4300/5400, GranAroma, Incanto, Exprelia. System LatteGo. Koszty 80–350 zł.
-- [Naprawa ekspresów Siemens i Bosch](https://ekspresy.org.pl/naprawa-siemens): Serwis automatów BSH — Siemens EQ.3/EQ.6/EQ.9/EQ.500/EQ.700, Bosch Vero/VeroCafe/VeroAroma. Identyczna platforma techniczna. Czujnik NTC, ceramDrive, autoMilk Clean. Koszty 100–400 zł.
-- [Naprawa ekspresów Krups](https://ekspresy.org.pl/naprawa-krups): Serwis automatów Krups (Groupe SEB) — Intuition Experience/Preference, Evidence, Essential, Arabica, starsze serie EA. Koszty 80–300 zł.
+- [Naprawa ekspresów DeLonghi](https://ekspresy.org.pl/naprawa-delonghi-szczecin): Serwis automatów DeLonghi — serie ECAM, Magnifica, Dinamica, PrimaDonna, Eletta, Autentica, Dedica. Lista najczęstszych usterek z orientacyjnymi kosztami naprawy (100–350 zł). Modele, FAQ, proces naprawy.
+- [Naprawa ekspresów Jura](https://ekspresy.org.pl/naprawa-jura-szczecin): Serwis automatów Jura — serie ENA, E-line (E6/E8), J-line, Z-line (Z6/Z8/Z10), S-line, A-line. Zamknięty blok parzenia, narzędzia specjalistyczne Jura. Koszty naprawy 180–500 zł.
+- [Naprawa ekspresów Saeco i Philips](https://ekspresy.org.pl/naprawa-saeco-szczecin): Serwis Saeco i Philips (ta sama platforma od 2009). Modele: Xelsis, PicoBaristo, Philips 2200/3200/4300/5400, GranAroma, Incanto, Exprelia. System LatteGo. Koszty 80–350 zł.
+- [Naprawa ekspresów Siemens i Bosch](https://ekspresy.org.pl/naprawa-siemens-szczecin): Serwis automatów BSH — Siemens EQ.3/EQ.6/EQ.9/EQ.500/EQ.700, Bosch Vero/VeroCafe/VeroAroma. Identyczna platforma techniczna. Czujnik NTC, ceramDrive, autoMilk Clean. Koszty 100–400 zł.
+- [Naprawa ekspresów Krups](https://ekspresy.org.pl/naprawa-krups-szczecin): Serwis automatów Krups (Groupe SEB) — Intuition Experience/Preference, Evidence, Essential, Arabica, starsze serie EA. Koszty 80–300 zł.
 
 ## Artykuły poradnikowe
 
