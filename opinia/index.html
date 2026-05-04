@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dziękujemy — Rutkowski Ekspresy</title>
+<meta name="robots" content="noindex,follow">
+
+<!-- Natychmiastowe przekierowanie jeśli JS wyłączony -->
+<meta http-equiv="refresh" content="5;url=https://search.google.com/local/writereview?placeid=ChIJ42E0GWanAEcRbY1d8r7eyKU">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(135deg,#f5ebd9 0%,#e8d5b7 50%,#d4b896 100%);
+  display:flex;align-items:center;justify-content:center;
+  min-height:100vh;padding:24px;color:#3d2817;overflow:hidden;
+}
+.card{
+  background:rgba(255,250,240,.92);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(212,184,150,.4);
+  border-radius:24px;
+  padding:48px 32px;
+  max-width:480px;width:100%;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(61,40,23,.15);
+  animation:fadeUp .8s ease-out;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.icon{
+  font-size:64px;margin-bottom:16px;
+  animation:wiggle 2s ease-in-out infinite;
+  display:inline-block;
+}
+@keyframes wiggle{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:38px;font-weight:600;
+  color:#5d3a1f;margin-bottom:12px;line-height:1.1;
+}
+.lead{
+  font-size:17px;line-height:1.5;
+  color:#6b4a32;margin-bottom:28px;
+}
+.stars{
+  font-size:28px;letter-spacing:6px;
+  margin:8px 0 24px;
+  color:#d4a04a;
+}
+.spinner{
+  display:inline-block;width:32px;height:32px;
+  border:3px solid rgba(93,58,31,.15);
+  border-top-color:#5d3a1f;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+  margin-bottom:16px;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.redirect-text{
+  font-size:14px;color:#8b6f4e;
+  margin-bottom:24px;
+}
+.btn{
+  display:inline-block;
+  background:#5d3a1f;color:#fff;
+  padding:14px 28px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;font-size:15px;
+  transition:all .2s;
+  box-shadow:0 4px 12px rgba(93,58,31,.25);
+}
+.btn:hover{background:#4a2e18;transform:translateY(-1px)}
+.footer{
+  margin-top:32px;font-size:13px;color:#a08568;
+  font-style:italic;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="icon">☕</div>
+  <h1>Dziękujemy!</h1>
+  <div class="stars">★★★★★</div>
+  <p class="lead">Twoja opinia naprawdę nam pomaga.<br>Za chwilę przeniesiemy Cię do Google.</p>
+  
+  <div class="spinner"></div>
+  <p class="redirect-text">Przekierowanie...</p>
+  
+  <a href="https://search.google.com/local/writereview?placeid=ChIJ42E0GWanAEcRbY1d8r7eyKU" class="btn">
+    Napisz opinię na Google
+  </a>
+  
+  <p class="footer">Rutkowski Ekspresy<br>ekspresy.org.pl</p>
+</div>
+
+<script>
+  // Przekierowanie po 3s — daje czas na podziękowanie i mentalne nastawienie na 5*
+  setTimeout(function(){
+    window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJ42E0GWanAEcRbY1d8r7eyKU';
+  }, 5000);
+</script>
+
+</body>
+</html>
