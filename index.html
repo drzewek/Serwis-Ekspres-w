@@ -158,6 +158,12 @@ body { background: var(--espresso); color: var(--cream); font-family: 'DM Sans',
   .top-bar-info { gap: 10px; font-size: 11px; }
   .top-bar-info .hours { display: none; }
 }
+  /* Robi miejsce dla top-bara, żeby nie przykrywał logo */
+body { padding-top: 50px; }
+
+@media (max-width: 600px) {
+  body { padding-top: 70px; }
+}
 
 /* NAV */
 nav {
