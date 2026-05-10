@@ -139,14 +139,18 @@
 
 html { scroll-behavior: smooth; }
 body { background: var(--espresso); color: var(--cream); font-family: 'DM Sans', Georgia, sans-serif; overflow-x: hidden; }
-  
-/* === TOP-BAR Z KONTAKTEM === */
+/* === TOP-BAR — pasek z kontaktem pod nagłówkiem === */
 .top-bar { 
-  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background: #3d2817; color: #fdf6e8;
-  padding: 10px 20px; font-size: 14px;
-  display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 8px;
+  background: #3d2817; 
+  color: #fdf6e8;
+  padding: 10px 20px; 
+  font-size: 14px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 24px;
+  border-bottom: 1px solid #2d1d11;
 }
 .top-bar a { 
   color: #fdf6e8; text-decoration: none; 
@@ -163,15 +167,13 @@ body { background: var(--espresso); color: var(--cream); font-family: 'DM Sans',
   display: inline-flex; align-items: center; gap: 6px; 
 }
 
-/* Robi miejsce dla top-bara, żeby nie przykrywał logo */
-body { padding-top: 50px; }
-
+/* Mobile — kompaktowo, chowamy pełny adres */
 @media (max-width: 600px) {
-  .top-bar { padding: 8px 12px; font-size: 13px; }
+  .top-bar { padding: 8px 12px; font-size: 13px; gap: 12px; }
   .top-bar-info { gap: 10px; font-size: 11px; }
-  .top-bar-info .hours { display: none; }
-  body { padding-top: 70px; }
-}
+  .top-bar-info .address { display: none; }
+}  
+
 
 /* NAV */
 nav {
@@ -467,16 +469,6 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
 </style>
 </head>
 <body>
-  <div class="top-bar">
-  <a href="tel:+48507956005">
-    <i class="ph-fill ph-phone"></i>
-    <span>+48 507 956 005</span>
-  </a>
-  <div class="top-bar-info">
-    <span><i class="ph-fill ph-map-pin"></i> Leszczynowa 19/U4, Szczecin</span>
-    <span class="hours"><i class="ph-fill ph-clock"></i> Pon-Pt 10:30-16:00</span>
-  </div>
-</div>
 
 <!-- NAV -->
 <nav id="mainNav">
@@ -505,6 +497,17 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
     <li><a href="#kontakt" class="nav-cta">Zgłoś ekspres</a></li>
   </ul>
 </nav>
+
+  <div class="top-bar">
+  <a href="tel:+48507956005">
+    <i class="ph-fill ph-phone"></i>
+    <span>+48 507 956 005</span>
+  </a>
+  <div class="top-bar-info">
+    <span class="address"><i class="ph-fill ph-map-pin"></i> Leszczynowa 19/U4, Szczecin</span>
+    <span class="hours"><i class="ph-fill ph-clock"></i> Pon-Pt 10:30-16:00</span>
+  </div>
+</div>
 
 <main>
 
