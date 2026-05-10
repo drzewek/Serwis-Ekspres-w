@@ -140,28 +140,36 @@
 html { scroll-behavior: smooth; }
 body { background: var(--espresso); color: var(--cream); font-family: 'DM Sans', Georgia, sans-serif; overflow-x: hidden; }
   
- /*Snippet*/
-  .top-bar { 
-  position: sticky; top: 0; z-index: 1000;
+/* === TOP-BAR Z KONTAKTEM === */
+.top-bar { 
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   background: #3d2817; color: #fdf6e8;
   padding: 10px 20px; font-size: 14px;
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 8px;
 }
-.top-bar a { color: #fdf6e8; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+.top-bar a { 
+  color: #fdf6e8; text-decoration: none; 
+  display: inline-flex; align-items: center; gap: 6px; 
+  font-weight: 600; 
+}
 .top-bar a:hover { color: #d4a04a; }
 .top-bar i { font-size: 16px; }
-.top-bar-info { display: flex; gap: 20px; font-size: 13px; color: #d4b896; }
-.top-bar-info span { display: inline-flex; align-items: center; gap: 6px; }
+.top-bar-info { 
+  display: flex; gap: 20px; 
+  font-size: 13px; color: #d4b896; 
+}
+.top-bar-info span { 
+  display: inline-flex; align-items: center; gap: 6px; 
+}
+
+/* Robi miejsce dla top-bara, żeby nie przykrywał logo */
+body { padding-top: 50px; }
+
 @media (max-width: 600px) {
   .top-bar { padding: 8px 12px; font-size: 13px; }
   .top-bar-info { gap: 10px; font-size: 11px; }
   .top-bar-info .hours { display: none; }
-}
-  /* Robi miejsce dla top-bara, żeby nie przykrywał logo */
-body { padding-top: 50px; }
-
-@media (max-width: 600px) {
   body { padding-top: 70px; }
 }
 
