@@ -139,51 +139,21 @@
 
 html { scroll-behavior: smooth; }
 body { background: var(--espresso); color: var(--cream); font-family: 'DM Sans', Georgia, sans-serif; overflow-x: hidden; }
-/* === TOP-BAR — pasek z kontaktem pod nagłówkiem === */
-.top-bar { 
-  background: #3d2817; 
-  color: #fdf6e8;
-  padding: 10px 20px; 
-  font-size: 14px;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; 
-  gap: 24px;
-  border-bottom: 1px solid #2d1d11;
-}
-.top-bar a { 
-  color: #fdf6e8; text-decoration: none; 
-  display: inline-flex; align-items: center; gap: 6px; 
-  font-weight: 600; 
-}
-.top-bar a:hover { color: #d4a04a; }
-.top-bar i { font-size: 16px; }
-.top-bar-info { 
-  display: flex; gap: 20px; 
-  font-size: 13px; color: #d4b896; 
-}
-.top-bar-info span { 
-  display: inline-flex; align-items: center; gap: 6px; 
-}
 
-/* Mobile — kompaktowo, chowamy pełny adres */
-@media (max-width: 600px) {
-  .top-bar { padding: 8px 12px; font-size: 13px; gap: 12px; }
-  .top-bar-info { gap: 10px; font-size: 11px; }
-  .top-bar-info .address { display: none; }
-}  
-
-
-/* NAV */
+/* NAV — kontener z dwoma rzędami */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 500;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 1.3rem 3rem;
   background: rgba(26,10,0,0.97);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(196,122,43,0.2);
 }
+
+/* Górny rząd nav: logo + menu */
+.nav-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.3rem 3rem;
+}
+
 .nav-logo { text-decoration: none; display: flex; align-items: center; }
 
 .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
@@ -192,8 +162,44 @@ nav {
 .nav-cta { background: var(--caramel) !important; color: var(--espresso) !important; padding: 0.5rem 1.2rem; border-radius: 2px; }
 .nav-cta:hover { background: var(--gold) !important; }
 
+/* Dolny rząd nav: pasek kontaktowy */
+.nav-contact-bar {
+  background: rgba(196,122,43,0.08);
+  border-top: 1px solid rgba(196,122,43,0.18);
+  padding: 8px 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--latte);
+}
+.nav-contact-bar a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+.nav-contact-bar a:hover { color: var(--gold); }
+.nav-contact-bar span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--latte);
+}
+.nav-contact-bar svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--caramel);
+}
+
 /* HERO */
-.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 4.5rem; position: relative; overflow: hidden; }
+.hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 7rem; position: relative; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(196,122,43,0.07) 0%, transparent 70%); pointer-events: none; }
 .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem 4rem 4rem; z-index: 2; }
 .hero-eyebrow { font-size: 0.67rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--caramel); margin-bottom: 1.6rem; animation: fadeUp 0.7s 0.2s both; }
@@ -340,10 +346,12 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  nav { padding: 1rem 1.5rem; }
+  .nav-row { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
-  .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-left { padding: 6rem 1.5rem 3rem; }
+  .nav-contact-bar { padding: 7px 1rem; gap: 14px; font-size: 12px; }
+  .nav-contact-bar .address { display: none; }
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 8rem; }
+  .hero-left { padding: 1rem 1.5rem 3rem; }
   .hero-right { display: none; }
   .stats-bar { grid-template-columns: repeat(2,1fr); }
   .section-inner { padding: 0 1.5rem; }
@@ -366,6 +374,8 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
   .stats-bar { grid-template-columns: 1fr 1fr; }
   .process-steps { grid-template-columns: 1fr; }
   .brand-sections-grid { grid-template-columns: 1fr; }
+  .nav-contact-bar { gap: 10px; font-size: 11px; }
+  .nav-contact-bar .hours { display: none; }
 }
 
 /* ── GALERIA ── */
@@ -470,44 +480,49 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
 </head>
 <body>
 
-<!-- NAV -->
+<!-- NAV: dwa rzędy — logo+menu na górze, kontakt na dole -->
 <nav id="mainNav">
-  <a href="#" class="nav-logo" style="display:flex;align-items:center"><svg width="290" height="65" viewBox="0 0 220 70" fill="none" aria-label="Rutkowski Ekspresy logo" style="display:block">
-  <path d="M18 28 L22 52 Q35 58 48 52 L52 28 Z" fill="rgba(196,122,43,0.12)" stroke="#C47A2B" stroke-width="1.3"/>
-  <ellipse cx="35" cy="28" rx="17" ry="5" fill="rgba(196,122,43,0.2)" stroke="#C47A2B" stroke-width="1.3"/>
-  <ellipse cx="35" cy="28" rx="13" ry="3.5" fill="#3D1F00"/>
-  <path d="M52 34 Q62 34 62 42 Q62 50 52 50" stroke="#C47A2B" stroke-width="1.3" fill="none"/>
-  <path d="M28 22 L20 14 Q17 11 20 8 Q23 5 26 8 L28 10 L38 20" stroke="#E8A840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  <circle cx="38" cy="21" r="4" stroke="#E8A840" stroke-width="1.3" fill="none"/>
-  <ellipse cx="35" cy="54" rx="22" ry="4" fill="none" stroke="#C47A2B" stroke-width="1" opacity="0.5"/>
-  <path d="M29 22 Q31 17 29 13" stroke="rgba(245,239,230,0.4)" stroke-width="1" fill="none" stroke-linecap="round"/>
-  <path d="M35 20 Q37 15 35 11" stroke="rgba(245,239,230,0.4)" stroke-width="1" fill="none" stroke-linecap="round"/>
-  <text x="78" y="28" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#F5EFE6" letter-spacing="0.5">Rutkowski</text>
-  <text x="79" y="48" font-family="sans-serif" font-size="10" fill="#C47A2B" letter-spacing="4">EKSPRESY</text>
-  <line x1="79" y1="53" x2="207" y2="53" stroke="#C47A2B" stroke-width="0.5" opacity="0.4"/>
-  <text x="79" y="63" font-family="sans-serif" font-size="7.5" fill="#D4A97A" letter-spacing="2" opacity="0.6">SERWIS · SZCZECIN</text>
-</svg></a>
-  <ul class="nav-links">
-    <li><a href="#uslugi">Usługi</a></li>
-    <li><a href="#marki">Marki</a></li>
-    <li><a href="#proces">Jak działamy</a></li>
-    <li><a href="#poradniki">Poradniki</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="o-nas.html">O nas</a></li>
-    <li><a href="#kontakt" class="nav-cta">Zgłoś ekspres</a></li>
-  </ul>
-</nav>
-
-  <div class="top-bar">
-  <a href="tel:+48507956005">
-    <i class="ph-fill ph-phone"></i>
-    <span>+48 507 956 005</span>
-  </a>
-  <div class="top-bar-info">
-    <span class="address"><i class="ph-fill ph-map-pin"></i> Leszczynowa 19/U4, Szczecin</span>
-    <span class="hours"><i class="ph-fill ph-clock"></i> Pon-Pt 10:30-16:00</span>
+  <div class="nav-row">
+    <a href="#" class="nav-logo" style="display:flex;align-items:center"><svg width="290" height="65" viewBox="0 0 220 70" fill="none" aria-label="Rutkowski Ekspresy logo" style="display:block">
+      <path d="M18 28 L22 52 Q35 58 48 52 L52 28 Z" fill="rgba(196,122,43,0.12)" stroke="#C47A2B" stroke-width="1.3"/>
+      <ellipse cx="35" cy="28" rx="17" ry="5" fill="rgba(196,122,43,0.2)" stroke="#C47A2B" stroke-width="1.3"/>
+      <ellipse cx="35" cy="28" rx="13" ry="3.5" fill="#3D1F00"/>
+      <path d="M52 34 Q62 34 62 42 Q62 50 52 50" stroke="#C47A2B" stroke-width="1.3" fill="none"/>
+      <path d="M28 22 L20 14 Q17 11 20 8 Q23 5 26 8 L28 10 L38 20" stroke="#E8A840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <circle cx="38" cy="21" r="4" stroke="#E8A840" stroke-width="1.3" fill="none"/>
+      <ellipse cx="35" cy="54" rx="22" ry="4" fill="none" stroke="#C47A2B" stroke-width="1" opacity="0.5"/>
+      <path d="M29 22 Q31 17 29 13" stroke="rgba(245,239,230,0.4)" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <path d="M35 20 Q37 15 35 11" stroke="rgba(245,239,230,0.4)" stroke-width="1" fill="none" stroke-linecap="round"/>
+      <text x="78" y="28" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#F5EFE6" letter-spacing="0.5">Rutkowski</text>
+      <text x="79" y="48" font-family="sans-serif" font-size="10" fill="#C47A2B" letter-spacing="4">EKSPRESY</text>
+      <line x1="79" y1="53" x2="207" y2="53" stroke="#C47A2B" stroke-width="0.5" opacity="0.4"/>
+      <text x="79" y="63" font-family="sans-serif" font-size="7.5" fill="#D4A97A" letter-spacing="2" opacity="0.6">SERWIS · SZCZECIN</text>
+    </svg></a>
+    <ul class="nav-links">
+      <li><a href="#uslugi">Usługi</a></li>
+      <li><a href="#marki">Marki</a></li>
+      <li><a href="#proces">Jak działamy</a></li>
+      <li><a href="#poradniki">Poradniki</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="o-nas.html">O nas</a></li>
+      <li><a href="#kontakt" class="nav-cta">Zgłoś ekspres</a></li>
+    </ul>
   </div>
-</div>
+  <div class="nav-contact-bar">
+    <a href="tel:+48507956005" aria-label="Zadzwoń">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.1 4.18 2 2 0 015.09 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>+48 507 956 005</span>
+    </a>
+    <span class="address">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Leszczynowa 19/U4, Szczecin</span>
+    </span>
+    <span class="hours">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+      <span>Pon-Pt 10:30-16:00</span>
+    </span>
+  </div>
+</nav>
 
 <main>
 
