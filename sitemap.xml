@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://ekspresy.org.pl/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -30,48 +30,48 @@
   </url>
 
   <url>
-    <loc>https://ekspresy.org.pl/o-nas.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/o-nas</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Strony markowe -->
   <url>
-    <loc>https://ekspresy.org.pl/naprawa-delonghi-szczecin.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/naprawa-delonghi-szczecin</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ekspresy.org.pl/naprawa-jura-szczecin.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/naprawa-jura-szczecin</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ekspresy.org.pl/naprawa-saeco-szczecin.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/naprawa-saeco-szczecin</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ekspresy.org.pl/naprawa-siemens-szczecin.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/naprawa-siemens-szczecin</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ekspresy.org.pl/naprawa-krups-szczecin.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/naprawa-krups-szczecin</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Poradniki -->
   <url>
-    <loc>https://ekspresy.org.pl/ekspres-nie-robi-kawy.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/ekspres-nie-robi-kawy</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -89,8 +89,8 @@
   </url>
 
   <url>
-    <loc>https://ekspresy.org.pl/odkamienianie-ekspresu-poradnik.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/odkamienianie-ekspresu-poradnik</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -104,8 +104,8 @@
   </url>
 
   <url>
-    <loc>https://ekspresy.org.pl/ile-kosztuje-naprawa-ekspresu.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/ile-kosztuje-naprawa-ekspresu</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -115,22 +115,22 @@
   </url>
 
   <url>
-    <loc>https://ekspresy.org.pl/pompa-ulka-ekspres-do-kawy.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/pompa-ulka-ekspres-do-kawy</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Strony prawne -->
   <url>
-    <loc>https://ekspresy.org.pl/regulamin.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/regulamin</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://ekspresy.org.pl/polityka-prywatnosci.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://ekspresy.org.pl/polityka-prywatnosci</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
