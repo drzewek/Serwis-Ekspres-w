@@ -1211,26 +1211,10 @@ footer { background: #0F0600; padding: 2.8rem 3rem; display: flex; align-items: 
     });
   }
 
-  // Jotform widget fallback — pokaż statyczne opinie jeśli widget nie załaduje się
-  setTimeout(function() {
-    var widgetContainer = document.getElementById('jotform-reviews-widget');
-    var fallback = document.getElementById('reviewsFallback');
-    if (widgetContainer && fallback) {
-      var hasWidget = widgetContainer.querySelector('iframe') || widgetContainer.querySelector('[class*="jotform"]');
-      var jfDiv = document.getElementById('JFWebsiteWidget-019cfce760c377efa5d9cc7a5e5c2042f994');
-      if (jfDiv && jfDiv.children.length > 0) hasWidget = true;
-      if (!hasWidget) {
-        widgetContainer.style.display = 'none';
-        fallback.style.display = '';
-      }
-    }
-  }, 8000);
-
+ 
 })();
 </script>
 
-<!-- Jotform Google Reviews Widget -->
-<script src="https://www.jotform.com/website-widgets/embed/019cfce760c377efa5d9cc7a5e5c2042f994" defer></script>
 
 </body>
 </html>
